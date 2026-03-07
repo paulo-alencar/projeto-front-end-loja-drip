@@ -16,7 +16,7 @@ const Breadcrumbs = ({ product }) => (
       to={`/produtos?categoria=${product.category}`}
       className="hover:text-pink-600"
     >
-      {product.category} {/* Exibe a categoria real do produto */}
+      {product.category}
     </Link>
     <FiChevronRight className="mx-2" />
     <span className="font-semibold text-gray-700">{product.name}</span>
@@ -39,7 +39,6 @@ const ProductViewPage = () => {
     ? product.images.map((img) => img.src)
     : [product.image];
 
-  // A estrutura principal da página permanece a mesma
   return (
     <div className="bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">

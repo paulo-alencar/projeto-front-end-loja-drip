@@ -85,7 +85,7 @@ const CompletarCadastro = () => {
               onChange={handleChange}
               disabled
             />
-            {/* MUDANÇA 4: CPF agora é opcional (required={false}) */}
+
             <InputField
               label="CPF"
               id="cpf"
@@ -112,7 +112,6 @@ const CompletarCadastro = () => {
             />
           </div>
 
-          {/* MUDANÇA 5: Adicionada seção de senha para conferência/edição */}
           <div className="space-y-4">
             <h2 className="text-lg font-semibold text-gray-800 border-b pb-2">
               Segurança

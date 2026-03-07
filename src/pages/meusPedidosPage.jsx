@@ -32,7 +32,7 @@ const MeusPedidosPage = () => {
 
   const total = cartItems.reduce((sum, item) => {
     if (!item || typeof item.price !== "number") return sum;
-    return sum + item.price * 0.7; // com desconto de 30%
+    return sum + item.price * 0.7;
   }, 0);
 
   return (

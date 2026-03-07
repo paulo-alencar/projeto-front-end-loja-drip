@@ -7,13 +7,10 @@ const ProductPage = () => {
   const [order, setOrder] = useState("menor-preco");
   const location = useLocation();
 
-  // 1. Extraímos os params da URL
-  // Usamos as strings diretamente para evitar que o objeto URLSearchParams confunda o compilador
   const searchParams = new URLSearchParams(location.search);
   const categoryFromUrl = searchParams.get("categoria") || "";
   const searchQuery = searchParams.get("filter")?.toLowerCase() || "";
 
-  // 2. Estado inicial dos filtros
   const [filters, setFilters] = useState(() => {
     if (categoryFromUrl) {
       return [
@@ -53,10 +50,7 @@ const ProductPage = () => {
     );
   };
 
-  // 3. CORREÇÃO PARA O COMPILER:
-  // Isolamos a lógica e garantimos que estamos trabalhando com uma cópia limpa.
   const processedProducts = useMemo(() => {
-    // Filtramos primeiro
     const filtered = products.filter((product) => {
       const title = product.title?.toLowerCase() || "";
       const category = product.category?.toLowerCase() || "";
@@ -80,7 +74,6 @@ const ProductPage = () => {
       return matchesSearch && matchesFilter;
     });
 
-    // Criamos uma cópia para ordenar, para não mutar o array original (o que irrita o compilador)
     const sorted = [...filtered];
 
     if (order === "menor-preco") {
@@ -90,8 +83,7 @@ const ProductPage = () => {
     }
 
     return sorted;
-  }, [filters, searchQuery, order]); // Dependências limpas
-
+  }, [filters, searchQuery, order]);
   return (
     <div className="flex flex-col lg:flex-row gap-8 px-4 sm:px-6 md:px-10 py-6 w-full">
       <aside className="w-full lg:w-[280px] flex-shrink-0">

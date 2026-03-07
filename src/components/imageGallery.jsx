@@ -5,8 +5,6 @@ const ImageGallery = ({ images }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [prevImages, setPrevImages] = useState(images);
 
-  // CORREÇÃO: Se as imagens mudaram, resetamos o índice diretamente na renderização.
-  // Isso evita o erro de "cascading renders" do useEffect.
   if (images !== prevImages) {
     setPrevImages(images);
     setSelectedIndex(0);
@@ -27,7 +25,6 @@ const ImageGallery = ({ images }) => {
 
   return (
     <div className="flex flex-col gap-4">
-      {/* Imagem Principal */}
       <div className="relative w-full aspect-square bg-gray-100 rounded-lg overflow-hidden group">
         <img
           src={images[selectedIndex]}
@@ -35,7 +32,6 @@ const ImageGallery = ({ images }) => {
           className="w-full h-full object-contain transition-opacity duration-300"
         />
 
-        {/* Setas (apenas se houver mais de uma imagem) */}
         {images.length > 1 && (
           <>
             <button
@@ -54,7 +50,6 @@ const ImageGallery = ({ images }) => {
         )}
       </div>
 
-      {/* Miniaturas Selecionáveis */}
       {images.length > 1 && (
         <div className="grid grid-cols-5 gap-3">
           {images.map((imgSrc, index) => (

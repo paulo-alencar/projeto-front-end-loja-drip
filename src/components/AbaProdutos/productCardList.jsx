@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// MUDANÇA 1: Precisamos de mais funções do nosso contexto
 import { useCart } from "../../contexts/cartContext";
 
 const ProductCardList = ({
@@ -11,13 +10,10 @@ const ProductCardList = ({
   priceDiscount,
   fullProduct,
 }) => {
-  // MUDANÇA 2: Pegamos as funções 'addToCart', 'removeFromCart' e 'isInCart'
   const { addToCart, removeFromCart, isInCart } = useCart();
 
-  // MUDANÇA 3: Verificamos se ESTE card de produto específico já está no carrinho
   const isProductInCart = isInCart(id);
 
-  // A lógica de desconto e formatação de preço continua a mesma
   const hasDiscount =
     typeof priceDiscount === "number" && priceDiscount < price;
   let discountPercentage = 0;
@@ -25,13 +21,10 @@ const ProductCardList = ({
     discountPercentage = Math.round(((price - priceDiscount) / price) * 100);
   }
 
-  // MUDANÇA 4: A função de clique agora decide se deve ADICIONAR ou REMOVER
   const handleToggleCart = () => {
     if (isProductInCart) {
-      // Se já estiver no carrinho, remove
       removeFromCart(id);
     } else {
-      // Se não estiver, adiciona
       addToCart(fullProduct);
     }
   };
@@ -45,7 +38,6 @@ const ProductCardList = ({
   };
 
   return (
-    // A estrutura principal do card permanece a mesma
     <div className="bg-white border border-gray-200 rounded-lg shadow-md flex flex-col justify-between transition-shadow hover:shadow-xl">
       <Link to={`/produto/${id}`} className="block relative">
         {hasDiscount && (
@@ -83,18 +75,15 @@ const ProductCardList = ({
         </div>
       </div>
 
-      {/* MUDANÇA 5: O BOTÃO AGORA É DINÂMICO */}
       <div className="p-4 pt-0">
         <button
-          onClick={handleToggleCart} // Usa a nova função
-          // As classes de estilo mudam com base no estado do carrinho
+          onClick={handleToggleCart}
           className={`w-full text-white font-bold py-2 rounded-lg transition mb-2 ${
             isProductInCart
-              ? "bg-green-600 hover:bg-green-700" // Estilo VERDE quando está no carrinho
-              : "bg-pink-600 hover:bg-pink-700" // Estilo ROSA quando não está
+              ? "bg-green-600 hover:bg-green-700"
+              : "bg-pink-600 hover:bg-pink-700"
           }`}
         >
-          {/* O texto do botão também muda */}
           {isProductInCart ? "Adicionado ao carrinho" : "Adicionar ao carrinho"}
         </button>
         <Link

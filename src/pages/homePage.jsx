@@ -129,8 +129,6 @@ const HomePage = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  // CORREÇÃO: Em vez de usar useEffect + outro useState, calculamos o filtro "on the fly".
-  // O useMemo memoriza o resultado e só recalcula se 'selectedCategory' mudar.
   const filteredProducts = useMemo(() => {
     if (!selectedCategory) {
       return productsData;
@@ -224,7 +222,6 @@ const HomePage = () => {
         </Section>
 
         <Section>
-          {/* Passamos o 'filteredProducts' calculado pelo useMemo */}
           <ProductListing products={filteredProducts} />
         </Section>
       </div>

@@ -34,10 +34,6 @@ const ProductInfo = ({ product }) => {
 
   return (
     <div className="flex flex-col">
-      {/* 
-        TODA A PARTE SUPERIOR DO SEU COMPONENTE ESTÁ INTACTA, 
-        COM OS SEUS AJUSTES DE ESTILO.
-      */}
       <h1 className="text-xl lg:text-2xl font-bold text-gray-800">
         {product.name}
       </h1>
@@ -124,8 +120,8 @@ const ProductInfo = ({ product }) => {
         onClick={handleToggleCart}
         className={`w-72 font-bold py-2 rounded-lg mt-6 transition-colors shadow-md ${
           isProductInCart
-            ? "bg-yellow-600 text-white" // Se ESTÁ no carrinho: cor escura, sem efeito hover
-            : "bg-yellow-500 text-black hover:bg-yellow-600" // Se NÃO ESTÁ: cor clara COM o efeito hover
+            ? "bg-yellow-600 text-white"
+            : "bg-yellow-500 text-black hover:bg-yellow-600"
         }`}
       >
         {isProductInCart ? "ADICIONADO AO CARRINHO" : "ADICIONAR AO CARRINHO"}

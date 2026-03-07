@@ -22,18 +22,15 @@ const Login = () => {
 
       const token = response.data.token;
 
-      // 1. Salva o token no localStorage para persistir a sessão
       localStorage.setItem("authToken", token);
 
-      // 2. Configura o token na instância do Axios para as próximas requisições
       setAuthToken(token);
 
       alert("Login realizado com sucesso!");
-      navigate("/"); // Redireciona para a página inicial após o login
+      navigate("/");
     } catch (error) {
       console.error("Erro no login:", error);
 
-      // Pega a mensagem de erro específica do backend, se existir
       const errorMessage =
         error.response?.data?.error ||
         "Email ou senha incorretos. Tente novamente.";
@@ -92,7 +89,7 @@ const Login = () => {
                   type={showPassword ? "text" : "password"}
                   required
                   value={password}
-                  onChange={(e) => setPassword(e.target.value)} // ALTERADO: usa o estado 'password'
+                  onChange={(e) => setPassword(e.target.value)}
                   className="block w-full px-3 py-2.5 bg-gray-100 border-none rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 sm:text-sm"
                   placeholder="Insira sua senha"
                 />
