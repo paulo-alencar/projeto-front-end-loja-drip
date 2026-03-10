@@ -1,6 +1,6 @@
 # Drip Store - Front-end
 
-Este é o projeto final do módulo de Front-end do meu curso de Desenvolvimento Fullstack pelo Geração Tech 3.0. A aplicação é um e-commerce moderno e responsivo, focado na experiência de compra de calçados e acessórios.
+Este é o projeto final do módulo de Front-end do meu curso de Desenvolvedor Fullstack pelo Geração Tech 3.0. A aplicação é um e-commerce moderno e responsivo, focado na experiência de compra de calçados e acessórios.
 
 **🔗 [Confira o Deploy do Projeto Aqui](https://projeto-front-end-loja-drip.vercel.app/)**
 
