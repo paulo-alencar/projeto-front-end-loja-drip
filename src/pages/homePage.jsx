@@ -25,17 +25,15 @@ const productsData = [
   {
     id: 1,
     name: "Nike Air Max 270",
-    image:
-      "https://images.tcdn.com.br/img/img_prod/740066/tenis_nike_air_max_270_react_optical_preto_cinza_389_1_20200120160045.jpg",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/96125102A2.jpg",
     price: 200,
     priceDiscount: 149.9,
     category: "Tênis",
   },
   {
     id: 2,
-    name: "Adidas Ultraboost",
-    image:
-      "https://authenticfeet.vtexassets.com/arquivos/ids/434723-800-800?v=638562278565370000&width=800&height=800&aspect=true",
+    name: "Adidas Ultraboost 5",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/99052604A5.jpg",
     price: 200,
     category: "Tênis",
     priceDiscount: 180,
@@ -44,16 +42,15 @@ const productsData = [
     id: 3,
     name: "Puma RS-X",
     image:
-      "https://a-static.mlcdn.com.br/800x560/tenis-puma-rs-x-3d-masculino/b2online/3943110242/53502c5bb7a4aca0addb96f6ac8635a6.jpeg",
+      "https://static.netshoes.com.br/produtos/tenis-puma-rs-x-mix/58/PI3-766Z-158/PI3-766Z-158_zoom1.jpg?ts=1771650425&ims=1088x",
     price: 99.9,
     category: "Tênis",
     priceDiscount: 89.9,
   },
   {
     id: 4,
-    name: "New Balance 574",
-    image:
-      "https://cdn.bnws3.com.br/b2online.com.br/image/cache/data/produtos/new-balance/masculino/tenis-new-balance-574-v2-masculino-vinho---cinza-8784-24-01-24-00-1200x1200.jpg",
+    name: "New Balance 574 V2",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/M17U2L32A2.jpg",
     price: 150,
     category: "Tênis",
     priceDiscount: 120,
@@ -61,24 +58,21 @@ const productsData = [
   {
     id: 5,
     name: "Asics Gel-Kayano",
-    image:
-      "https://asicsbr.vteximg.com.br/arquivos/ids/2744214-1000-1000/null.jpg",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/M17PPC42A4.jpg",
     price: 75,
     category: "Tênis",
   },
   {
     id: 6,
     name: "Reebok Classic Leather",
-    image:
-      "https://static.hupishop.com.br/public/hupibikes/imagens/produtos/tenis-reebok-classic-nylon-bege-feminino-667d9a2cdd458.jpg",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/M174P1CLA2.jpg",
     price: 30,
     category: "Tênis",
   },
   {
     id: 7,
-    name: "Vans Old Skool",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBJ4a69-eDi4bOCihhjxFyiC9WWKC9krq3A&s",
+    name: "Vans Ryland",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/99413831A12.jpg",
     price: 200,
     priceDiscount: 180,
     category: "Tênis",
@@ -86,40 +80,36 @@ const productsData = [
   {
     id: 8,
     name: "Converse Chuck Taylor",
-    image:
-      "https://cloviscalcados.vteximg.com.br/arquivos/ids/1036233-1024-1024/Tenis-Masculino-Chuck-Taylor-Converse-All-Star-CT00040007-0320004_001-02.jpg?v=638364710577700000",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/M0ZQBR02A2.jpg",
     price: 250,
     category: "Tênis",
   },
   {
     id: 9,
-    name: "Camisa Joy Division",
-    image:
-      "https://stamp.jetassets.com.br/produto/TS1722_2024-09-19_14_33_09_0.jpeg",
+    name: "Camisa Nike Dri-Fit Legend",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/97743002A4.jpg",
     price: 100,
     category: "Camisetas",
   },
   {
     id: 10,
-    name: "Calça Mom Jeans",
-    image:
-      "https://oqvestir.fbitsstatic.net/img/p/calca-feminina-mom-jeans-azul-178657/463134.jpg?w=1600&h=2133&v=202501231556",
+    name: "Calça Kappa Maggiore ",
+    image: "https://imgcentauro-a.akamaihd.net/800x800/88902402A2.jpg",
     price: 400,
     category: "Calças",
   },
   {
     id: 11,
     name: "Boné MST",
-    image:
-      "https://http2.mlstatic.com/D_NQ_NP_662323-MLB78900818559_092024-O-bone-mst-brim-6-gomos-adulto.webp",
+    image: "https://imgcentauro-a.akamaihd.net/660x660/99388031A2.jpg",
     price: 200,
     category: "Bonés",
   },
   {
     id: 12,
-    name: "Headphone JBL",
+    name: "Headphone JBL 670",
     image:
-      "https://m.media-amazon.com/images/I/61BDf8KO8AL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "https://static.netshoes.com.br/produtos/fone-de-ouvido-bluetooth-jbl-tune-670-com-cancelamento-de-ruido-preto/01/N26-095X-N01/N26-095X-N01_zoom1.jpg?ts=1772022591&ims=1088x",
     price: 299,
     category: "Headphones",
   },
