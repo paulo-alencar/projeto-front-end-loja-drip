@@ -44,7 +44,7 @@ export const products = [
     condition: "Novo",
     brand: "Adidas",
     sizes: [37, 38, 39, 40, 41],
-    colors: ["#1a1a1a", "#eaeaea"],
+    colors: ["#000080", "#000000"],
     relatedProducts: [1, 3],
   },
   {
@@ -123,7 +123,7 @@ export const products = [
     condition: "Novo",
     brand: "Asics",
     sizes: [37, 39, 41, 43],
-    colors: ["#264653", "#e76f51"],
+    colors: ["#ffffff", "#000000"],
     relatedProducts: [4, 6],
   },
   {
@@ -147,7 +147,7 @@ export const products = [
     condition: "Novo",
     brand: "Reebok",
     sizes: [36, 38, 40, 42],
-    colors: ["#f5f3f4", "#22223b"],
+    colors: ["#6f4e37", "#000000"],
     relatedProducts: [5, 7],
   },
   {
@@ -195,7 +195,7 @@ export const products = [
     condition: "Novo",
     brand: "Converse",
     sizes: [36, 37, 38, 39, 40],
-    colors: ["#ffffff", "#000000", "#e63946"],
+    colors: ["#000000", "#ffffff", "#e63946"],
     relatedProducts: [7],
   },
   {
@@ -208,7 +208,7 @@ export const products = [
     price: 179.99,
     priceDiscount: 29.99,
     description:
-      "Camiseta preta de algodão com estampa clássica da capa do álbum 'Unknown Pleasures' da banda Joy Division.",
+      "Ideal para o esporte, garante o conforto que necessário para alcançar a performance almejada.",
     image: "https://imgcentauro-a.akamaihd.net/800x800/97743002A4.jpg",
     images: [
       {
@@ -234,7 +234,7 @@ export const products = [
     price: 400.0,
     priceDiscount: 349.99,
     description:
-      "Calça jeans estilo 'mom' com cintura alta, modelagem reta e lavagem clara. Perfeita para um look casual e confortável.",
+      "Confeccionada com materiais leves e resistentes, essa calça é a pedida certa para se exercitar ou mesmo para compor um look mais esportivo nas diversas atividades casuais.",
     image: "https://imgcentauro-a.akamaihd.net/800x800/88902402A2.jpg",
     images: [
       {
@@ -248,7 +248,7 @@ export const products = [
     condition: "Novo",
     brand: "OQVestir",
     sizes: [36, 38, 40, 42, 44],
-    colors: ["#89c2d9"],
+    colors: ["#000000"],
     relatedProducts: [9, 7],
   },
   {
@@ -261,7 +261,7 @@ export const products = [
     price: 89.9,
     priceDiscount: 69.9,
     description:
-      "Boné de brim vermelho com 6 gomos, fecho ajustável e logo clássico bordado na frente. Um símbolo de luta e estilo.",
+      "Confeccionado com tecido leve e respirável, esse boné garante conforto durante todo o dia.",
     image: "https://imgcentauro-a.akamaihd.net/660x660/99388031A2.jpg",
     images: [
       {
@@ -275,7 +275,7 @@ export const products = [
     condition: "Novo",
     brand: "MST",
     sizes: ["Único"],
-    colors: ["#d62828"],
+    colors: ["#000000"],
     relatedProducts: [9, 12],
   },
   {
@@ -288,7 +288,7 @@ export const products = [
     price: 299.0,
     priceDiscount: 249.0,
     description:
-      "Headphone on-ear sem fio JBL Tune 520BT com tecnologia Bluetooth 5.3, som JBL Pure Bass e bateria de longa duração.",
+      "Headphone on-ear sem fio JBL Tune 670 com tecnologia Bluetooth 5.3, som JBL Pure Bass e bateria de longa duração.",
     image:
       "https://static.netshoes.com.br/produtos/fone-de-ouvido-bluetooth-jbl-tune-670-com-cancelamento-de-ruido-preto/01/N26-095X-N01/N26-095X-N01_zoom1.jpg?ts=1772022591&ims=1088x",
     images: [

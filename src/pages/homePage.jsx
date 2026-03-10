@@ -100,7 +100,7 @@ const productsData = [
   },
   {
     id: 11,
-    name: "Boné MST",
+    name: "Boné Adidas Strapback 3",
     image: "https://imgcentauro-a.akamaihd.net/660x660/99388031A2.jpg",
     price: 200,
     category: "Bonés",
