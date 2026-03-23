@@ -70,4 +70,4 @@ Neste projeto, foquei na aplicação prática de padrões de mercado utilizando 
 
 ---
 
-Feito por **Paulo Alencar**
+### Desenvolvido por Paulo Alencar
